@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    
+    <div class="left">
+      
+      <div id="box">
+      
+      </div>
+    </div>
+
+    <div class="right">
+      <header>
+        <div id="properties">PROPERTIES</div>
+        <div id="code">CODE</div>
+        <button style="padding: 10px; background-color: aqua;" class="btnCope" onclick="copyContent()">Copy!</button>
+      </header>
+   <div class="tab_blok">
+    <button class="simple">Simplified</button>
+    <button class="actual color">Actual</button>
+   </div>
+
+      <div class="box_item_btn">
+        <button class="items_btn">items</button>
+        <button class="resetDefault">reset to defaults</button>
+        <div class="Itemsdiv">
+          <div id="closebtn">
+            <button class="close">X</button>
+          </div>
+          <div class="header_item">
+            <p>Items <span id="count">1</span></p>
+            <div>
+              <button class="add_btn btn">Add</button>
+              <button class="remove_btn btn">Remove last</button>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="all_box">
+            <div class="select-wrap">
+              <select id="item_select" ></select>
+            </div>
+            <div>
+              <label for="all">all</label> <input id="all" type="checkbox" />
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+          <div class="input_box">
+            <label for="">width</label>
+            <input type="number" class="width" />
+            <br /><br />
+            <label for="">height</label>
+            <input type="number" class="height" />
+          </div>
+        </div>
+      </div>
+
+<!-- ====== -->
+
+<div class="actualChil">
+  <section>
+    <p>justify-content ?</p>
+    <div class="select-wrap">
+    <select id="jus">
+      <option value="flex-start">flex-start</option>
+      <option value="center">center</option>
+      <option value="space-between">space-between</option>
+      <option value="space-around">space-around</option>
+    </select>
+    </div>
+    <p>align-items ?</p>
+    <div class="select-wrap">
+    <select id="align-item">
+      <option value="flex-start">flex-start</option>
+      <option value="flex-end">flex-end</option>
+      <option value="baseline">baseline</option>
+    </select>
+    </div>
+  </section>
+        <!-- ===== -->
+       <div class="range_blok">
+        <p  for="vol">gap ?</p> <br>
+        <input type="range" id="vol" name="vol" min="0" max="500">
+       </div>
+</div>
+<div class="simpleChil dis">
+  😁
+</div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
